@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">Practice</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="video-section">
+    <video id="hero-video" loop muted>
+      <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">Week 2</div>
+    <button id="toggle-video">Play Video</button>
+  </section>
+
+  <section class="section audio-section">
+    <!-- Remove the audio control elements to control the audio from the button instead -->
+    <audio id="sample-audio" >
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <button id ="toggle-audio">Play Audio</button>
+  </section>
+
+  <section class="section canvas-section">
+    <h2>Let's see you drawing skills</h2>
+    <div class="color-picker">
+      <button data-color="#000000" style="background:#000"></button>
+      <button data-color="#e74c3c" style="background:#e74c3c"></button>
+      <button data-color="#3498db" style="background:#3498db"></button>
+      <button data-color="#2ecc71" style="background:#2ecc71"></button>
+      <button data-color="#f1c40f" style="background:#f1c40f"></button>
+      <button data-color="#9b59b6" style="background:#9b59b6"></button>
+    </div>
+    <canvas id="drawing-canvas" width="800" height="400"></canvas>
+    <br><br>
+    <button id="clear-canvas">Clear Canvas</button>
+  </section>
+
+  <section class="section grid-section">
+    <h2>Use your knowledge to make it responsive</h2>
+    <div class="grid-container">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+      <div class="card">Card 5</div>
+      <div class="card">Card 6</div>
+    </div>
+    <br>
+    <button id="add-card">Add New Card</button>
+  </section>
+
+  <footer class="footer">
+    © 2025 Practice – Built with HTML5, CSS3 & JavaScript
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
