@@ -64,5 +64,11 @@
         "email": "hahatesting@gmail.com",
         "password_hash": "$2y$10$isTzZRCxcU6P4rMIXDkuCe65vRBNh8ciiI01WRcz\/A0O53QCcTAx.",
         "registered_at": "2025-12-10T03:44:56+01:00"
+    },
+    {
+        "name": "Ayush Neupane",
+        "email": "neupaneayush02@gmail.com",
+        "password_hash": "$2y$10$9ZUNFztDi85LBYQ2ibRPre2Y2ZxlLMiTxo2CWudBsLaB.6K8PG9I.",
+        "registered_at": "2025-12-10T04:06:55+01:00"
     }
 ]
