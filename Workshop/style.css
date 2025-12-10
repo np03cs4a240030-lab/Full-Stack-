@@ -1,0 +1,139 @@
+/* ---------- Modern Glassmorphism Style ---------- */
+
+:root{
+  --bg1: #d8e9ff;
+  --bg2: #eef5ff;
+
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.35);
+
+  --blue1: #0050c8;
+  --blue2: #003e99;
+
+  --success: #1e7b32;
+  --error: #b00020;
+
+  --muted: #6b7280;
+}
+
+/* Background */
+body{
+  margin:0;
+  height:100vh;
+  font-family: "Inter", Arial, sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+}
+
+/* Glass Card */
+.container{
+  width:420px;
+  padding:32px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius:16px;
+  border:1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(31,38,135,0.15);
+}
+
+/* Title */
+h2{
+  text-align:center;
+  margin:0 0 20px 0;
+  font-size:26px;
+  color:var(--blue1);
+  font-weight:700;
+}
+
+/* Labels */
+label{
+  font-weight:600;
+  display:block;
+  margin-top:14px;
+}
+
+/* Inputs */
+input{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,0.15);
+  background:rgba(255,255,255,0.85);
+  font-size:15px;
+  transition:0.15s ease;
+}
+
+input:focus{
+  border-color:var(--blue1);
+  box-shadow:0 4px 14px rgba(0, 80, 200, 0.25);
+  outline:none;
+}
+
+/* Error Fields */
+.field-error{
+  color:var(--error);
+  font-size:14px;
+  background:rgba(255,0,0,0.08);
+  padding:8px;
+  border-radius:8px;
+  margin-top:8px;
+  border:1px solid rgba(255,0,0,0.15);
+}
+
+/* Success Message (fades out automatically) */
+.success{
+  background: rgba(0,255,100,0.12);
+  border:1px solid rgba(0,200,80,0.25);
+  color:var(--success);
+  padding:10px;
+  border-radius:8px;
+  text-align:center;
+  margin-bottom:15px;
+
+  /* CSS-only fade-out */
+  animation: fadeOut 1s ease-in 3s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity:0;
+    max-height:0;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+  }
+}
+
+/* Modern Button */
+button{
+  width:100%;
+  margin-top:22px;
+  padding:12px;
+  font-size:17px;
+  font-weight:700;
+  color:white;
+
+  background: linear-gradient(135deg, var(--blue1), var(--blue2));
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+
+  box-shadow:0 6px 18px rgba(0,60,150,0.25);
+  transition:0.2s ease;
+}
+
+button:hover{
+  transform: translateY(-3px);
+  opacity:0.95;
+}
+
+button:active{
+  transform: translateY(0);
+  box-shadow:0 4px 14px rgba(0,60,150,0.22);
+}
