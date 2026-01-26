@@ -1,0 +1,125 @@
+/* Lots of unnecessary and unused styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+font-family: 'Roboto', sans-serif;
+
+background-color: #ffffff;
+
+color: #333333;
+
+line-height: 1.6; /* Changed from 1.2 */
+
+font-size: 16px;
+
+}
+
+header {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  color: #f8fafc;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(12, 74, 110, 0.2);
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+main {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ea580c;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.services {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1;
+  min-width: 250px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(12, 74, 110, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0f766e;
+}
+.content {
+
+max-width: 70ch;
+
+margin: 0 auto;
+
+}
+
+footer {
+  background-color: #0b3b49;
+  color: #e0f2f1;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}

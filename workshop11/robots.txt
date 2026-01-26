@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://localhost/Fullstack-3rdsem/week11/workshop11/sitemap.xml
